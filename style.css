@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+body,
+html {
+  font-family: "Fredoka", sans-serif;
+  background: #fef1e7;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+nav .logo span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+.join-btn {
+  background-color: #fff;
+  color: #111;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  padding: 5rem 3rem 2rem;
+  background: url("images/bg.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 50%;
+  color: white;
+}
+
+.hero-content h1 {
+  margin-top: 2% !important;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.cta-button {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  background: #ff4f5a;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #ff313d;
+}
+
+.hero-img {
+  max-width: 45%;
+}
+
+.hero-img img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.wave-divider {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  margin-top: -1px;
+}
+
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hidden-talents {
+  background-color: #fef3eb;
+  color: #2e2e2e;
+  padding: 5rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hidden-talents h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hidden-talents p {
+  font-size: 1.2rem;
+  color: #6d6d6d;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.blob1 {
+  background: #00d1d1;
+  width: 100px;
+  height: 100px;
+  top: 20px;
+  left: 10%;
+}
+.blob2 {
+  background: #ff6b6b;
+  width: 80px;
+  height: 80px;
+  bottom: 50px;
+  right: 15%;
+}
+.blob3 {
+  background: #ffa502;
+  width: 60px;
+  height: 60px;
+  top: 100px;
+  right: 25%;
+}
+.blob4 {
+  background: #1e90ff;
+  width: 50px;
+  height: 50px;
+  bottom: 80px;
+  left: 20%;
+}
+
+.stage-section {
+  background-color: #fef1e7;
+  padding: 0rem;
+}
+
+.stage-content {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  gap: 2rem;
+}
+
+.stage-image {
+  /* flex: 2 1 10%; */
+  width: 20%;
+  position: relative;
+  z-index: 1;
+  background-color: rgb(10 16 38);
+}
+
+.image-box {
+  background: #1a1a2e;
+  /* padding: 2rem; */
+  position: relative;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 8px;
+  z-index: 2;
+  position: relative;
+}
+
+.shapes .circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.shapes .yellow {
+  background: #ffb703;
+  width: 30px;
+  height: 30px;
+  top: 10%;
+  left: 5%;
+}
+
+.shapes .pink {
+  background: #ff4d80;
+  width: 20px;
+  height: 20px;
+  bottom: 10%;
+  left: 40%;
+}
+
+.shapes .blue {
+  background: #00d1ff;
+  width: 18px;
+  height: 18px;
+  top: 20%;
+  right: 10%;
+}
+
+.shapes .triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid #ff69b4;
+  transform: rotate(30deg);
+  top: 0;
+  left: 60%;
+}
+
+.stage-text {
+  flex: 1 1 50%;
+  padding: 1rem;
+}
+
+.stage-text h5 {
+  color: #e44e5a;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-family: monospace;
+}
+
+.stage-text h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: "Fredoka", sans-serif;
+  color: #1c1c2b;
+}
+
+.stage-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #5f5f5f;
+  margin-bottom: 1rem;
+}
+
+.PI-image{
+  background-image: url('./images/PI-image.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.Downalod{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .stage-content,
+  .rules {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .stage-image {
+    display: block;
+    margin: auto;
+    width: 70%;
+  }
+
+  .change {
+    background-color: rgb(10 16 38);
+    color: white !important;
+  }
+
+  .item {
+    width: 100% !important;
+  }
+
+  .direct{
+    flex-direction: column !important;
+  }
+
+  .staff{
+    width: 50%;
+  }
+
+  .image-box {
+    margin-top: 2rem;
+  }
+
+  .stage-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content h1 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .discover-talent {
+    font-size: 2rem !important;
+  }
+
+  .hero-content p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #ddd;
+  }
+
+  .discover-text {
+    font-size: 1rem;
+  }
+
+  .hidden-talents {
+    padding: 2rem 1rem;
+  }
+
+  .banner1 {
+    height: 100px !important;
+  }
+
+  .namelogo {
+    font-size: 1rem !important;
+  }
+
+  .change2{
+    min-height: 0vh !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-content,
+  .hero-img {
+    max-width: 100%;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
